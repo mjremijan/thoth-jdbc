@@ -1,4 +1,4 @@
-package org.thoth.jdbc.postgresql;
+package org.thoth.jdbc.oracle;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,17 +6,20 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import org.junit.Test;
 
-public class PostgreSQLRemoteJdbcIT {
+public class OracleRemoteJdbcIT {
 
     @Test
     public void connect() throws Exception {
-        Class.forName("org.postgresql.Driver");
+        Class.forName("oracle.jdbc.driver.OracleDriver");
+
+        String SID
+            = "xe";
 
         String connectionUrl
-            = "jdbc:postgresql://localhost:5432/widget";
+            = "jdbc:oracle:thin:@localhost:1521:" + SID;
 
-        String user = "widgetapp";
-        String pass = "widgetapp";
+        String user = "hr";
+        String pass = "hr";
 
         Connection conn
             = DriverManager.getConnection(connectionUrl, user, pass);
@@ -25,10 +28,10 @@ public class PostgreSQLRemoteJdbcIT {
             = conn.createStatement();
 
         ResultSet rs
-            = stmt.executeQuery("select id from widget");
+            = stmt.executeQuery("select employee_id from employees");
 
         while (rs.next()) {
-            System.out.printf("Widget ID: %s%n", rs.getString(1));
+            System.out.printf("EMPLOYEE_ID: %d%n", rs.getInt(1));
         }
     }
 

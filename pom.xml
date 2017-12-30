@@ -33,25 +33,36 @@
         
         
         <!-- DERBY DERBY DERBY DERBY DERBY DERBY DERBY DERBY DERBY DERBY DERBY DERBY DERBY DERBY DERBY -->
-<dependency>
-    <groupId>org.apache.derby</groupId>
-    <artifactId>derbyclient</artifactId>
-    <version>10.11.1.1</version>
-    <scope>test</scope>
-</dependency>
-<dependency>
-    <groupId>org.apache.derby</groupId>
-    <artifactId>derby</artifactId>
-    <version>10.11.1.1</version>
-    <scope>test</scope>
-</dependency>
+        <dependency>
+            <groupId>org.apache.derby</groupId>
+            <artifactId>derbyclient</artifactId>
+            <version>10.11.1.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.derby</groupId>
+            <artifactId>derby</artifactId>
+            <version>10.11.1.1</version>
+            <scope>test</scope>
+        </dependency>
         
-<dependency>
-    <groupId>org.postgresql</groupId>
-    <artifactId>postgresql</artifactId>
-    <version>42.1.4.jre7</version>
-    <scope>test</scope>
-</dependency>
+        
+        <!-- POSTGRESQL POSTGRESQL POSTGRESQL POSTGRESQL POSTGRESQL POSTGRESQL POSTGRESQL POSTGRESQL -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.1.4.jre7</version>
+            <scope>test</scope>
+        </dependency>
+        
+        <!-- ORACLE ORACLE ORACLE ORACLE ORACLE ORACLE ORACLE ORACLE ORACLE ORACLE ORACLE ORACLE ORACLE --> 
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc6</artifactId>
+            <version>11.2.0.4</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/ojdbc6.jar</systemPath>
+        </dependency>
     </dependencies>
     
     <profiles>
