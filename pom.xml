@@ -33,25 +33,25 @@
         
         
         <!-- DERBY DERBY DERBY DERBY DERBY DERBY DERBY DERBY DERBY DERBY DERBY DERBY DERBY DERBY DERBY -->
-        <dependency>
-            <groupId>org.apache.derby</groupId>
-            <artifactId>derbyclient</artifactId>
-            <version>10.11.1.1</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.derby</groupId>
-            <artifactId>derby</artifactId>
-            <version>10.11.1.1</version>
-            <scope>test</scope>
-        </dependency>
+<dependency>
+    <groupId>org.apache.derby</groupId>
+    <artifactId>derbyclient</artifactId>
+    <version>10.11.1.1</version>
+    <scope>test</scope>
+</dependency>
+<dependency>
+    <groupId>org.apache.derby</groupId>
+    <artifactId>derby</artifactId>
+    <version>10.11.1.1</version>
+    <scope>test</scope>
+</dependency>
         
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>42.1.4.jre7</version>
-            <scope>test</scope>
-        </dependency>
+<dependency>
+    <groupId>org.postgresql</groupId>
+    <artifactId>postgresql</artifactId>
+    <version>42.1.4.jre7</version>
+    <scope>test</scope>
+</dependency>
     </dependencies>
     
     <profiles>

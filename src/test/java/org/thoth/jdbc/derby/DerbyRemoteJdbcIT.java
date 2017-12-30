@@ -13,7 +13,7 @@ public class DerbyRemoteJdbcIT {
         Class.forName("org.apache.derby.jdbc.ClientDriver");
 
         String connectionUrl
-            = "jdbc:derby://localhost:1110/widget";
+            = "jdbc:derby://localhost:1527/widget";
 
         String user = "sa";
         String pass = "sa";
