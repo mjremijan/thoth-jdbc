@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-Clean and Build project (integration-test)</actionName>
+            <displayName>Clean and Build project (integration-test)</displayName>
+            <goals>
+                <goal>clean</goal>
+                <goal>verify</goal>
+            </goals>
+            <activatedProfiles>
+                <activatedProfile>integration-test</activatedProfile>
+            </activatedProfiles>
+        </action>
+    </actions>
